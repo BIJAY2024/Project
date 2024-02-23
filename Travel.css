@@ -1,0 +1,276 @@
+html{
+  font-size: 62.5;
+}
+
+body{
+    background-color: #ffffff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+/* .............. */
+@media (min-width: 801px) and (max-width: 2560px) {
+  #button{
+    display: none;
+  }
+  .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation img{
+    width: 100%;
+    cursor: grab;
+  }
+  .navigation a{
+    text-decoration: none;
+    display: flex;
+    padding: 0.5rem;
+    margin: 2%;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+  }
+  .navigation a:hover{
+    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
+  .navigation :first-child {
+    margin-right: 20%;
+  }
+  .navigation i{
+    display: none;
+  }
+
+  .hamburger-menu{
+    display: none;
+  }
+  .partners{
+    background: gainsboro;
+  }
+  .partners img{
+  height: 3.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  cursor: grab;
+  }
+  #tropical-destination img{
+    width: 95%;
+  }
+  #tropical-destination{
+    margin-top: 5rem;
+  }
+  #menu{
+    background-color:black;
+    height: 100vh;
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left:1000%;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in;
+    display: none;
+  }
+ #box1 img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 2250px;
+ }
+ .boxes{
+  height: 100%;
+  padding-bottom: 4rem;
+  padding: 1rem;
+}
+#reviews img{
+  margin-right: 40%;
+  margin-left: 40%;
+}
+#reviews{
+  background-color: #f0e9e9;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+}
+.footer a{
+  text-decoration: none;
+  color: #181E4B;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer{
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-left: auto;
+}
+}
+/* All Css */
+body{
+  height: 100vh;
+  width: 100vw;
+}
+header{
+  background-image: url(Assets/Header-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+#menu{
+  background-color:black;
+  height: 100vh;
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  left:1000%;
+  transition-delay: 0.4s;
+  transition-timing-function: ease-in;
+}
+#menu.smenu{
+  left: 0%;
+}
+.hamburger-menu i,a,li{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  margin-left: 2%;
+  padding-bottom: 1rem;
+}
+.button{
+  font-size: 0.8rem;
+  background-color: rgb(255, 108, 10);
+  color: white;
+  width: 6rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+#input{
+  background-color: rgba(255, 255, 255, 0.37); /* White color with 80% opacity */
+  backdrop-filter: blur(40px);
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 75%;
+}
+#input select{
+  margin: 1.5rem;
+}
+#offer img{
+ width: 25%;
+ margin-bottom: 7%;
+}
+#offer p{
+  text-align: center;
+}
+#statue{
+  background-image: url(Assets/Liberty.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  margin-top: 10rem;
+}
+.Trending{
+  margin-top: 30rem;
+}
+.Trending img{
+  width: 100%;
+}
+.Trending div{
+  height: 100%;
+}
+.boxes{
+  height: 100%;
+  padding-bottom: 4rem;
+  padding: 1rem;
+}
+
+/* mobile device */
+@media (min-width: 100px) and (max-width: 800px) {
+  .navigation a{
+    display: none;
+  }
+  .navigation button{
+    display: none;
+  }
+  .navigation img{
+    width: 20%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .navigation i{
+    float: inline-end;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  .partners img{
+    height: 3rem;
+    padding: 0.9rem;
+    cursor: grab;
+  }
+  #tropical-destination img{
+      width: 80%;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+    #statue{
+      background-image: url(Assets/Liberty.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 25vh;
+      width: 100%;
+      margin-top: 5rem;
+    }
+    .row{
+      display: flex;
+    }
+    #box1 img{
+      height: 45vh;
+      width: 90vw;
+     }
+     .Trending{
+      margin-top: 5rem;
+    }
+    .boxes{
+      height: 100%;
+      padding-bottom: 4rem;
+      padding: 1rem;
+    }
+    #reviews img{
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+    #reviews{
+      background-color: #f0e9e9;
+      padding: 2rem;
+      border-radius: 30px;
+      box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    }
+    .footer a{
+      text-decoration: none;
+      color: #181E4B;
+      font-weight: 600;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .button{
+      font-size: 0.8rem;
+      background-color: rgb(255, 108, 10);
+      color: white;
+      width: 6rem;
+      border-radius: 5px;
+      padding: 0.3rem;
+      font-weight: 500;
+      border: 1px solid black;
+    }
+}

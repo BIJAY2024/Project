@@ -1,0 +1,208 @@
+html{
+    font-size: 62.5;
+  }
+  
+  body{
+      background-color: #ffffff; /* White background color */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+  }
+  /*  */
+  #menu{
+    background-color:black;
+    height: 100vh;
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left:1000%;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in;
+  }
+  #menu.smenu{
+    left: 0%;
+  }
+  .hamburger-menu i,a,li{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+    padding-bottom: 1rem;
+  }
+  .button{
+    font-size: 0.8rem;
+    background-color: rgb(255, 108, 10);
+    color: white;
+    width: 6rem;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-weight: 500;
+    border: 1px solid black;
+  }
+
+@media (min-width: 801px) and (max-width: 2560px) {
+    .headerOne{
+        background-image: url(Assets/PageOneBG.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85vh;
+    }
+  #headingOne{
+    margin-top: 40000rem;
+  }
+    .headerTwo{
+      background-image: url(Assets/pageTwoBg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 85vh;
+  }
+    .navigation{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .navigation img{
+      width: 100%;
+      cursor: grab;
+    }
+    .navigation a{
+      text-decoration: none;
+      display: flex;
+      padding: 0.5rem;
+      margin: 2%;
+      font-size: 1rem;
+      color: white;
+      font-weight: 600;
+    }
+    .navigation a:hover{
+      color: yellow;
+      text-decoration: underline;
+      text-underline-offset: 0.2rem;
+    }
+    .navigation :first-child {
+      margin-right: 20%;
+    }
+    .navigation i{
+      display: none;
+    }
+    article div iframe{
+      margin-top: 8rem;
+    }
+  .images img{
+    padding: 1rem;
+    background-color: #dfdcdc7e;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+  #reviews img{
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+  #reviews{
+    background-color: #f0e9e9;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+  }
+  .footer a{
+    text-decoration: none;
+    color: #181E4B;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  footer{
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-left: auto;
+  }
+  #input input{
+    display: block;
+    width: 48%;
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+  #input{
+    padding: 0.8rem;
+  }
+  #tours div{
+    padding: 1rem;
+  }
+}
+@media (min-width: 100px) and (max-width: 800px) {
+    .headerOne{
+        background-image: url(Assets/PageOneBG.png);
+        background-size: cover;
+        height: 11rem;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .headerTwo{
+      background-image: url(Assets/pageTwoBg.png);
+      background-size: cover;
+      height: 11rem;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+    .navigation a{
+      display: none;
+    }
+    .navigation button{
+      display: none;
+    }
+    .navigation img{
+      width: 20%;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .navigation i{
+      float: inline-end;
+      padding: 0.5rem;
+      color: white;
+      cursor: pointer;
+    }
+    .images img{
+      padding: 1rem;
+      background-color: #dfdcdc7e;
+      border-radius: 50%;
+      margin: 1rem;
+    }
+    #reviews img{
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+    #reviews{
+      background-color: #f0e9e9;
+      padding: 2rem;
+      border-radius: 30px;
+      box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    }
+    .footer a{
+      text-decoration: none;
+      color: #181E4B;
+      font-weight: 600;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .button{
+      font-size: 0.8rem;
+      background-color: rgb(255, 108, 10);
+      color: white;
+      width: 6rem;
+      border-radius: 5px;
+      padding: 0.3rem;
+      font-weight: 500;
+      border: 1px solid black;
+    }
+    #input input{
+      width: 100%;
+      margin: 0.2rem;
+      padding: 0.5rem;
+    }
+    #input{
+      padding: 4rem;
+    }
+  }
